@@ -8,11 +8,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "In this assignment, you will dive deeper into custom shaders with Three.js and learn to apply dynamic textures to 3D objects. You will load images as textures, modify fragment shaders to create custom effects, and animate objects/textures with transformation matrices and keyboard interactions.",
   "dependencies": {
     "three": "^0.169.0"
   },
   "devDependencies": {
-    "vite": "^5.4.8"
-  }
+    "vite": "^5.4.14"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianlung/CS174A-Proj4-Textures.git"
+  },
+  "bugs": {
+    "url": "https://github.com/christianlung/CS174A-Proj4-Textures/issues"
+  },
+  "homepage": "https://github.com/christianlung/CS174A-Proj4-Textures#readme"
 }

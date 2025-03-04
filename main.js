@@ -41,7 +41,7 @@ class Texture_Rotate {
 
             // TODO: 1.b Load the texture color from the texture map
             // Hint: Use texture2D function to get the color of the texture at the current UV coordinates
-            vec4 tex_color = vec4(1.0, 0.0, 0.0, 1.0);
+            vec4 tex_color = texture2D(uTexture, vUv);
             
             // TODO: 2.d add the outline of a black square in the center of each texture that moves with the texture
             // Hint: Tell whether the current pixel is within the black square or not using the UV coordinates
@@ -83,7 +83,7 @@ class Texture_Scroll_X {
 
             // TODO: 1.b Load the texture color from the texture map
             // Hint: Use texture2D function to get the color of the texture at the current UV coordinates
-            vec4 tex_color = vec4(0.0, 1.0, 0.0, 1.0);
+            vec4 tex_color = texture2D(uTexture, vUv);
             
 
             // TODO: 2.d add the outline of a black square in the center of each texture that moves with the texture
@@ -100,8 +100,8 @@ let animation_time = 0.0;
 
 const cube1_geometry = new THREE.BoxGeometry(2, 2, 2);
 
-// TODO: 1.a Load texture map 
-const cube1_texture = null;
+// Load texture map 
+const cube1_texture = new THREE.TextureLoader().load('assets/stars.png');
 
 // TODO: 1.c Apply Texture Filtering Techniques to Cube 1
 // Nearest Neighbor Texture Filtering
@@ -127,8 +127,8 @@ scene.add(cube1_mesh);
 
 const cube2_geometry = new THREE.BoxGeometry(2, 2, 2);
 
-// TODO: 1.a Load texture map 
-const cube2_texture = null;
+// Load texture map 
+const cube2_texture = new THREE.TextureLoader().load('assets/earth.gif');
 
 // TODO: 1.c Apply Texture Filtering Techniques to Cube 2
 // Linear Mipmapping Texture Filtering
