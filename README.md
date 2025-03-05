@@ -95,7 +95,7 @@ Use continuous scrolling the texture map on cube #2. Translate the texture varyi
 To code this part, modify the fragment shader of `Texture_Scroll_X` to scroll the texture horizontally. The texture should move from left to right and then wrap around to the left side again.
 **Implementation Guidance**:
 - In the fragment shader, the varying `vUv` stores the vec2 of pre-interpolated texture coordinates.
-- The variable `animation_time` is already passed all the way through into the fragment shader for you. But you will need to update its value in the `animate()` function. You can compute the animation time similarly to previous assignments and ten use something like `cube1_uniforms.animation_time.value = animation_time`.
+- The variable `animation_time` is already passed all the way through into the fragment shader for you. But you will need to update its value in the `animate()` function. You can compute the animation time similarly to previous assignments and then use something like `cube1_uniforms.animation_time.value = animation_time`.
 - In the fragment shader, modify the uv coordinates as a function of the `animation_time` value. Because we are just translating the points along the x coordinates, you can do something like `vUv.x = vUv.x + animation_time * scroll_speed` .Note this might not be the exact correct code.
 
 
